@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@300;400;500;700&display=swap');
+
+:root {
+  --green: #003909;
+  --purple: #3B0B47;
+  --font: 'Courier Prime';
+  --fallbackfont: monospace;
+}
+
+* {
+  font-family: var(--font), var(--fallbackfont);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+body {
+    animation: background-animate 10s infinite;
+}
+  
+@keyframes background-animate {
+    0% {
+      background-color: var(--green);
+    }
+    50% {
+      background-color: #000000;
+    }
+    100% {
+      background-color: var(--green);
+    }
+}
+
+.button {
+    border-radius: 15px;
+    font-size: 25px;
+    background: var(--purple);
+    color: white;
+    font-family: var(--font), var(--fallbackfont);
+    padding: 20px 25px 90px 25px;
+    margin: 0px 100px 35px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+    box-shadow: 12px 12px 25px 2px rgba(0, 0, 0, 0.2), 10px 10px 25px 2px var(--purple);
+}
+
+.button:hover {
+    padding: 20px 40px 90px 40px;
+    box-shadow: 12px 12px 25px 2px rgba(0, 0, 0, 0.4), 10px 10px 25px 2px var(--purple);
+}
+
+p {
+    font-size: 10px;
+}
